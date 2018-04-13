@@ -1,0 +1,16 @@
+﻿<!-- http://blog.scottlogic.com/2012/02/06/a-simple-pattern-for-creating-re-useable-usercontrols-in-wpf-silverlight.html -->
+<UserControl x:Class="mkPoEParser.Item"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:local="clr-namespace:mkPoEParser"
+            mc:Ignorable="d" Height="150" Width="450">
+    <Grid x:Name="LayoutRoot" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" VerticalAlignment="Top" Width="450">
+        <Border HorizontalAlignment="Left" Height="130" Margin="0,0,0,0" VerticalAlignment="Top" Width="90" Background="Gray">
+            <Image x:Name="ItemImage" HorizontalAlignment="Left" Height="130" Margin="0,0,0,0" VerticalAlignment="Top" Width="90">
+            </Image>
+        </Border>
+        <TextBlock x:Name="ItemName" HorizontalAlignment="Left" Margin="105,10,0,0" TextWrapping="Wrap" Text="ItemName" VerticalAlignment="Top" FontWeight="Bold"/>
+    </Grid>
+</UserControl>

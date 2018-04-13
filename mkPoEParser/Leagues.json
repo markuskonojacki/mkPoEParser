@@ -1,0 +1,183 @@
+﻿// https://www.pathofexile.com/developer/docs/api-resource-leagues
+
+// http://api.pathofexile.com/leagues?type=main&compact=1
+[
+  {
+    "id": "Standard",
+    "url": "http://pathofexile.com/forum/view-thread/71278",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null
+  },
+  {
+    "id": "Hardcore",
+    "url": "http://pathofexile.com/forum/view-thread/71276",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null
+  },
+  {
+    "id": "SSF Standard",
+    "url": "http://pathofexile.com/forum/view-thread/1841357",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null
+  },
+  {
+    "id": "SSF Hardcore",
+    "url": "http://pathofexile.com/forum/view-thread/1841353",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null
+  },
+  {
+    "id": "Legacy",
+    "url": "http://pathofexile.com/forum/view-thread/1841349",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z"
+  },
+  {
+    "id": "Hardcore Legacy",
+    "url": "http://pathofexile.com/forum/view-thread/1841345",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z"
+  },
+  {
+    "id": "SSF Legacy",
+    "url": "http://pathofexile.com/forum/view-thread/1841364",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z"
+  },
+  {
+    "id": "SSF HC Legacy",
+    "url": "http://pathofexile.com/forum/view-thread/1841361",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z"
+  }
+]
+
+// http://api.pathofexile.com/leagues?type=main
+[
+  {
+    "id": "Standard",
+    "description": "The default game mode.",
+    "registerAt": null,
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/71278",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null,
+    "rules": []
+  },
+  {
+    "id": "Hardcore",
+    "description": "A character killed in the Hardcore league is moved to the Standard league.",
+    "registerAt": null,
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/71276",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null,
+    "rules": [
+      {
+        "id": 4,
+        "name": "Hardcore",
+        "description": "A character killed in Hardcore is moved to its parent league."
+      }
+    ]
+  },
+  {
+    "id": "SSF Standard",
+    "description": "SSF Standard",
+    "registerAt": null,
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/1841357",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null,
+    "rules": [
+      {
+        "id": 24,
+        "name": "Solo",
+        "description": "You may not party in this league."
+      }
+    ]
+  },
+  {
+    "id": "SSF Hardcore",
+    "description": "SSF Hardcore",
+    "registerAt": null,
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/1841353",
+    "startAt": "2013-01-23T21:00:00Z",
+    "endAt": null,
+    "rules": [
+      {
+        "id": 4,
+        "name": "Hardcore",
+        "description": "A character killed in Hardcore is moved to its parent league."
+      },
+      {
+        "id": 24,
+        "name": "Solo",
+        "description": "You may not party in this league."
+      }
+    ]
+  },
+  {
+    "id": "Legacy",
+    "description": "Find valuable items from Path of Exile's past as you combine three of the seventeen previous Challenge Leagues together.\n\nThis is the default Path of Exile league.",
+    "registerAt": "2017-03-03T17:00:00Z",
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/1841349",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z",
+    "rules": []
+  },
+  {
+    "id": "Hardcore Legacy",
+    "description": "Find valuable items from Path of Exile's past as you combine three of the seventeen previous Challenge Leagues together.\n\nA character killed in Hardcore Legacy becomes a Standard character.",
+    "registerAt": "2017-03-03T17:00:00Z",
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/1841345",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z",
+    "rules": [
+      {
+        "id": 4,
+        "name": "Hardcore",
+        "description": "A character killed in Hardcore is moved to its parent league."
+      }
+    ]
+  },
+  {
+    "id": "SSF Legacy",
+    "description": "SSF Legacy",
+    "registerAt": "2017-03-03T17:00:00Z",
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/1841364",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z",
+    "rules": [
+      {
+        "id": 24,
+        "name": "Solo",
+        "description": "You may not party in this league."
+      }
+    ]
+  },
+  {
+    "id": "SSF HC Legacy",
+    "description": "SSF HC Legacy",
+    "registerAt": "2017-03-03T17:00:00Z",
+    "event": false,
+    "url": "http://pathofexile.com/forum/view-thread/1841361",
+    "startAt": "2017-03-03T20:00:00Z",
+    "endAt": "2017-05-29T22:00:00Z",
+    "rules": [
+      {
+        "id": 4,
+        "name": "Hardcore",
+        "description": "A character killed in Hardcore is moved to its parent league."
+      },
+      {
+        "id": 24,
+        "name": "Solo",
+        "description": "You may not party in this league."
+      }
+    ]
+  }
+]
